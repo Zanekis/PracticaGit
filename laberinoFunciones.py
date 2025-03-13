@@ -2,7 +2,7 @@ FILAS = 5
 COLUMNAS = 5
 META_FILA = FILAS - 1
 META_COLUMNA = COLUMNAS - 1
-
+##13/03/2025
 def crear_laberinto():
     laberinto = [[False] * COLUMNAS for _ in range(FILAS)]
     laberinto[META_FILA][META_COLUMNA] = True  # Meta
