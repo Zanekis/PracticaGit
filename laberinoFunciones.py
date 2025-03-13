@@ -7,7 +7,7 @@ def crear_laberinto():
     laberinto = [[False] * COLUMNAS for _ in range(FILAS)]
     laberinto[META_FILA][META_COLUMNA] = True  # Meta
     return laberinto
-
+##max esta bien guapote
 def mostrar_laberinto(laberinto, fila_jugador, columna_jugador):
     for i in range(FILAS):
         for j in range(COLUMNAS):
