@@ -20,13 +20,13 @@ def mostrar_laberinto(laberinto, fila_jugador, columna_jugador):
         print()
 
 def mover_jugador(fila_jugador, columna_jugador, movimiento):
-    if movimiento == 'i' and fila_jugador > 0:
+    if movimiento == '1' and fila_jugador > 0:
         return fila_jugador - 1, columna_jugador
-    elif movimiento == 'k' and fila_jugador < FILAS - 1:
+    elif movimiento == '2' and fila_jugador < FILAS - 1:
         return fila_jugador + 1, columna_jugador
-    elif movimiento == 'j' and columna_jugador > 0:
+    elif movimiento == '3' and columna_jugador > 0:
         return fila_jugador, columna_jugador - 1
-    elif movimiento == 'l' and columna_jugador < COLUMNAS - 1:
+    elif movimiento == '4' and columna_jugador < COLUMNAS - 1:
         return fila_jugador, columna_jugador + 1
     else:
         print("Movimiento no válido.")
